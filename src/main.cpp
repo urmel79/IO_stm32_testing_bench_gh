@@ -8,20 +8,35 @@
 
 #include "config.hpp"
 
+// blink onboard like heartbeat
+#define delay_ms_on 1000 // 1000 ms on delay
+#define delay_ms_off 120 // 120 ms off delay
+
 void setup() {
   // initialize LED digital pin as an output.
   pinMode(LED_BUILTIN, OUTPUT);
+
+  // initialize serial communication at 57600 bits per second:
+  Serial.begin(115200);
+
+  // //activate USB CDC driver
+	// SerialUSB.begin(9600);
 }
 
 void loop() {
-  // turn the LED on (HIGH is the voltage level)
-  digitalWrite(LED_BUILTIN, HIGH);
-  // wait for a second
-  delay(1000);
-  // turn the LED off by making the voltage LOW
-  digitalWrite(LED_BUILTIN, LOW);
-   // wait for a second
-  delay(1000);
+  // blinking like a heartbeat :)
+  delay(delay_ms_on);               // wait to switch led on
+  Serial.println("Onboard LED: ON");
+  digitalWrite(LED_BUILTIN, LOW);   // turn the LED on (negative logic)
+  delay(delay_ms_off);              // wait to switch led off
+  Serial.println("Onboard LED: OFF");
+  digitalWrite(LED_BUILTIN, HIGH);  // turn the LED off (negative logic)
+  delay(delay_ms_off);              // wait to switch led off
+  Serial.println("Onboard LED: ON");
+  digitalWrite(LED_BUILTIN, LOW);   // turn the LED on (negative logic)
+  delay(delay_ms_off);              // wait to switch led off
+  Serial.println("Onboard LED: OFF");
+  digitalWrite(LED_BUILTIN, HIGH);  // turn the LED off (negative logic)
 }
 
 
