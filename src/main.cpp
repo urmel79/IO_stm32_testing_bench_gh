@@ -27,16 +27,16 @@ void loop() {
   // blinking like a heartbeat :)
   delay(delay_ms_on);               // wait to switch led on
   Serial.println("Onboard LED: ON");
-  digitalWrite(LED_BUILTIN, LOW);   // turn the LED on (negative logic)
+  digitalWrite(ONBOARD_LED, LOW);   // turn the LED on (negative logic)
   delay(delay_ms_off);              // wait to switch led off
   Serial.println("Onboard LED: OFF");
-  digitalWrite(LED_BUILTIN, HIGH);  // turn the LED off (negative logic)
+  digitalWrite(ONBOARD_LED, HIGH);  // turn the LED off (negative logic)
   delay(delay_ms_off);              // wait to switch led off
   Serial.println("Onboard LED: ON");
-  digitalWrite(LED_BUILTIN, LOW);   // turn the LED on (negative logic)
+  digitalWrite(ONBOARD_LED, LOW);   // turn the LED on (negative logic)
   delay(delay_ms_off);              // wait to switch led off
   Serial.println("Onboard LED: OFF");
-  digitalWrite(LED_BUILTIN, HIGH);  // turn the LED off (negative logic)
+  digitalWrite(ONBOARD_LED, HIGH);  // turn the LED off (negative logic)
 }
 
 
