@@ -9,6 +9,8 @@
 #include "config.hpp"
 
 // blink onboard like heartbeat
+// #define delay_ms_on 1500 // 1000 ms on delay
+// #define delay_ms_off 200 // 120 ms off delay
 #define delay_ms_on 1000 // 1000 ms on delay
 #define delay_ms_off 120 // 120 ms off delay
 
@@ -16,7 +18,7 @@ void setup() {
   // initialize LED digital pin as an output.
   pinMode(LED_BUILTIN, OUTPUT);
 
-  // initialize serial communication at 57600 bits per second:
+  // initialize serial communication at 115200 bits per second:
   Serial.begin(115200);
 
   // //activate USB CDC driver
@@ -25,18 +27,18 @@ void setup() {
 
 void loop() {
   // blinking like a heartbeat :)
-  delay(delay_ms_on);               // wait to switch led on
+  delay(delay_ms_on);                 // wait to switch led on
   Serial.println("Onboard LED: ON");
-  digitalWrite(ONBOARD_LED, LED_ON);   // turn the LED on (negative logic)
-  delay(delay_ms_off);              // wait to switch led off
+  digitalWrite(ONBOARD_LED, LED_ON);  // turn the LED on
+  delay(delay_ms_off);                // wait to switch led off
   Serial.println("Onboard LED: OFF");
-  digitalWrite(ONBOARD_LED, LED_OFF);  // turn the LED off (negative logic)
-  delay(delay_ms_off);              // wait to switch led off
+  digitalWrite(ONBOARD_LED, LED_OFF); // turn the LED off
+  delay(delay_ms_off);                // wait to switch led off
   Serial.println("Onboard LED: ON");
-  digitalWrite(ONBOARD_LED, LED_ON);   // turn the LED on (negative logic)
-  delay(delay_ms_off);              // wait to switch led off
+  digitalWrite(ONBOARD_LED, LED_ON);  // turn the LED on
+  delay(delay_ms_off);                // wait to switch led off
   Serial.println("Onboard LED: OFF");
-  digitalWrite(ONBOARD_LED, LED_OFF);  // turn the LED off (negative logic)
+  digitalWrite(ONBOARD_LED, LED_OFF); // turn the LED off
 }
 
 
