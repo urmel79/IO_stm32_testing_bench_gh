@@ -46,7 +46,7 @@ int bme280_alt_get() {
 }
 
 void bme280_printSerial(double temp, int hum, double press, int alt) {
-  Serial.print("Temperature = ");
+  Serial.print("Temperature = \t");
   Serial.print(temp, 2);
   Serial.println(" °C");
 
@@ -55,15 +55,15 @@ void bme280_printSerial(double temp, int hum, double press, int alt) {
   //Serial.print(1.8 * bme.readTemperature() + 32);
   //Serial.println(" *F");
 
-  Serial.print("Humidity = ");
+  Serial.print("Humidity = \t");
   Serial.print(hum);
   Serial.println(" % rH");
 
-  Serial.print("Pressure = ");
+  Serial.print("Pressure = \t");
   Serial.print(press);
   Serial.println(" hPa");
 
-  Serial.print("Approx. Altitude = ");
+  Serial.print("Altitude = \t");
   Serial.print(alt);
   Serial.println(" m");
 
