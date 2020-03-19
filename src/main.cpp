@@ -47,23 +47,23 @@ void blink_led_heartbeat_fsm() {
 
     switch (g_i_state) {
       case 0:
-        Serial.println("Onboard LED: ON");
+        // Serial.println("Onboard LED: ON");
         digitalWrite(ONBOARD_LED, LED_ON);  // turn the LED on
         g_ul_led_delay_time_ms = 120;
         g_i_state++;  // switch to next state
         break;
       case 1:
-        Serial.println("Onboard LED: OFF");
+        // Serial.println("Onboard LED: OFF");
         digitalWrite(ONBOARD_LED, LED_OFF); // turn the LED off
         g_i_state++;  // switch to next state
         break;
       case 2:
-        Serial.println("Onboard LED: ON");
+        // Serial.println("Onboard LED: ON");
         digitalWrite(ONBOARD_LED, LED_ON);  // turn the LED on
         g_i_state++;  // switch to next state
         break;
       case 3:
-        Serial.println("Onboard LED: OFF");
+        // Serial.println("Onboard LED: OFF");
         digitalWrite(ONBOARD_LED, LED_OFF); // turn the LED off
         g_ul_led_delay_time_ms = 1000;
         g_i_state = 0; // reset state
