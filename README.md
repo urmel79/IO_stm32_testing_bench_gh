@@ -60,6 +60,7 @@ This project is licensed under the terms of "GNU General Public License v3.0". F
 ## Todo and known issues
 
 [Todo 2020-03-31] Establishing the wifi connection is very slow and not very reliable. It has to be rewritten in an finite state machine (FSM).
+
 [Todo 2020-03-31] Sensor data of the BME280 should be displayed on the webserver.
 
 [Issue 2020-03-31] Webserver responses are very unstable and unreliable. Eliminate of delay() functions and rewrite in an non-blocking manner.
