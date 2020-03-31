@@ -36,7 +36,10 @@
 // #define SEALEVELPRESSURE_HPA (1022) // DD-Albertstadt, 2019-08-30 10:00
 // #define SEALEVELPRESSURE_HPA (1026) // DD-Albertstadt, 2020-03-18 15:00
 // #define SEALEVELPRESSURE_HPA (1025) // DD-Albertstadt, 2020-03-19 11:00
-#define SEALEVELPRESSURE_HPA (1024) // DD-Albertstadt, 2020-03-19 17:00
+// #define SEALEVELPRESSURE_HPA (1024) // DD-Albertstadt, 2020-03-19 17:00
+// #define SEALEVELPRESSURE_HPA (1023) // DD-Albertstadt, 2020-03-20 16:00
+// #define SEALEVELPRESSURE_HPA (1028) // DD-Gittersee, 2020-03-30 14:00
+#define SEALEVELPRESSURE_HPA (1030) // DD-Gittersee, 2020-03-31 09:00
 
 bool bme280_iic_connect();
 

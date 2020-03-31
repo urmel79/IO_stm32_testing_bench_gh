@@ -17,5 +17,9 @@
   #define LED_OFF LOW
 #endif
 
+// choose hostname and sensors (done by build_flags in platformio.ini)
+#ifdef BLUEPILL_F103C8
+  #define HOSTNAME "stm32_bluepill"
+#endif
 
 #endif // config_hpp
