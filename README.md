@@ -14,21 +14,17 @@ With an established network connection it is possible to implement higher level 
 
 Coming soon.
 
-## Parts list
+## Bill of materials (BOM)
 
-Coming soon.
+Following parts I have used in this project:
 
-<!-- Following parts I have used in this project (every component you will need twice of course):
-
-- breadboard full+ (830 holes)
+- Bluepill (STM32F103C8T6)
+- ESP8266-01 (as wifi adapter); flashed with original fimware (AT commands are used)
+- breadboard adapter for ESP8266-01
+- USB to serial adapter (chipsets like CP2102 or CH340G are suitable); important: only use the 3.3 V VCC lines!
+- BME280 (temperature, humidity and pressure sensor)
+- breadboard half+ (400 holes)
 - wire jumpers
-- LiPo battery pack
-- USB cable with micro USB plug
-- NodeMCU v2 (ESP8266)
-- OLED I2C display, 128 x 64 Pixel, 1.3 Zoll (SSH1106 chip)
-- GPS module u-blox Neo-6M (GY-GPS6MV2 chip)
-- LoRa transceiver Adafruit RFM9x LoRa Radio (RFM95W chip, 868 MHz)
-- LoRa antenna (868 MHz), 3 dBi omnidirectional, SMA plug -->
 
 ## Breadboard layout and schematics
 
