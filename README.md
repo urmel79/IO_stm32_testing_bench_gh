@@ -32,15 +32,13 @@ Coming soon.
 
 ## Breadboard layout and schematics
 
-Coming soon.
+With *Fritzing* (https://fritzing.org) I have created following breadboard layout:
 
-<!-- With *Fritzing* (https://fritzing.org) I have created following breadboard layout:
-
-![Breadboard Layout](./fritzing/NodeMcu_LoRa_GPS_OLED_Breadboard.png)
+![Breadboard Layout](./fritzing/Bluepill_wifi_Breadboard.png)
 
 The schematics looks like this:
 
-![Schematics](./fritzing/NodeMcu_LoRa_GPS_OLED_Schematics.png) -->
+![Schematics](./fritzing/Bluepill_wifi_Schematics.png)
 
 ## Software libraries and documentation
 
