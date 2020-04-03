@@ -18,10 +18,11 @@ Coming soon.
 
 Following parts I have used in this project:
 
-- Bluepill (STM32F103C8T6)
+- **Bluepill** board (with STM32F103C8T6 ARM3 microcontroller)
 - ESP8266-01 (as wifi adapter); flashed with original fimware (AT commands are used)
 - breadboard adapter for ESP8266-01
-- USB to serial adapter (chipsets like CP2102 or CH340G are suitable); important: only use the 3.3 V VCC lines!
+- USB-to-serial adapter (chipsets like CP2102 or CH340G are suitable); important: only use the 3.3 V VCC lines!
+- USB cable (which one depends on the port of the USB-to-serial adapter)
 - BME280 (temperature, humidity and pressure sensor)
 - breadboard half+ (400 holes)
 - wire jumpers
