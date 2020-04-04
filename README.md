@@ -1,6 +1,6 @@
 # STM32 testing bench with PlatformIO
 
-The aim of this project is to build a test environment based on STM32 microcontroller platforms like the "Bluepill F103C8", the "Nucleo64 F103RB" and the "Maple mini clone" from Baite with the use of PlatformIO and the Arduino framework. So a very important goal is to write the code as portable as possible with many defines.
+The aim of this project is to build a test environment based on STM32 microcontroller platforms like the **Bluepill F103C8**, the **Nucleo64 F103RB** and the **Maple mini clone** from Baite with the use of PlatformIO and the Arduino framework. So a very important goal is to write the code as portable as possible with many defines.
 
 The onboard LED is flashing like a heartbeat to show all things are "alive". This function is implemented as an finite state machine (FSM) and in an non-blocking manner without delay() functions.
 
