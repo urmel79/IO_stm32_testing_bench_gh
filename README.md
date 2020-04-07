@@ -39,7 +39,7 @@ The schematics looks like this:
 
 ## Software libraries and documentation
 
-Coming soon.
+Go to the source code: I have it supplied with many comments for explanation.
 
 ## License
 
