@@ -27,15 +27,35 @@ Following parts I have used in this project:
 - breadboard half+ (400 holes)
 - wire jumpers
 
-## Breadboard layout and schematics
+A word of **warning** about some (cheap) USB-to-serial adapters: some of them have pins labelled with **3.3 V**, but measurements showed something else like **4.3 V**.
 
-With *Fritzing* (https://fritzing.org) I have created following breadboard layout:
+Those (defective) USB-to-serial adapters are looking like this:
 
-![Breadboard Layout](./fritzing/Bluepill_wifi_cp2102_3v3_Breadboard.png)
+![cp2102_5v_Breadboard](./fritzing/cp2102_5v_Breadboard_Foto.png)
+
+Because the external main supply voltage of the Bluepill (STM32 F103C8T6) is **NOT 5 V tolerant** and has maximum ratings of 4.0 V. So you can't use this pin for voltage supply of your microcontroller -- maybe you'll see the *magic blue smoke*.
+
+Instead of this use the 5 V pin and connect it to the 5V power supply pin of the Bluepill. The voltage regulator of the board will generate the 3.3 V level. Because of this two cases I have created with *Fritzing* (https://fritzing.org) two versions of breadboard layout and schematics. The UART pins (RxD, TxD) are then also at about 4.3 V level -- but luckily the UART pins (e. G. PA9, PA10) are 5 V tolerant, so it will work :)
+
+## Breadboard layout and schematics (3.3 V version)
+
+Here is the breadboard layout with the 3.3 V capable USB-to-serial adapter:
+
+![Breadboard Layout 3.3V](./fritzing/Bluepill_wifi_cp2102_3v3_Breadboard.png)
 
 The schematics looks like this:
 
-![Schematics](./fritzing/Bluepill_wifi_cp2102_3v3_Schematics.png)
+![Schematics 3.3V](./fritzing/Bluepill_wifi_cp2102_3v3_Schematics.png)
+
+## Breadboard layout and schematics (5 V version)
+
+Here is the breadboard layout with the 5 V capable USB-to-serial adapter:
+
+![Breadboard Layout 5V](./fritzing/Bluepill_wifi_cp2102_5v_Breadboard.png)
+
+The schematics looks like this:
+
+![Schematics 5V](./fritzing/Bluepill_wifi_cp2102_5v_Schematics.png)
 
 ## Software libraries and documentation
 
