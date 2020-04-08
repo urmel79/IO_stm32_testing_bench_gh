@@ -31,11 +31,11 @@ Following parts I have used in this project:
 
 With *Fritzing* (https://fritzing.org) I have created following breadboard layout:
 
-![Breadboard Layout](./fritzing/Bluepill_wifi_Breadboard.png)
+![Breadboard Layout](./fritzing/Bluepill_wifi_cp2102_3v3_Breadboard.png)
 
 The schematics looks like this:
 
-![Schematics](./fritzing/Bluepill_wifi_Schematics.png)
+![Schematics](./fritzing/Bluepill_wifi_cp2102_3v3_Schematics.png)
 
 ## Software libraries and documentation
 
