@@ -10,10 +10,6 @@ STM32 microcontrollers usually don't have any networking interfaces on board lik
 
 With an established network connection it is possible to implement higher level functionality like a webserver to display the sensor data. An other possibility will be to transfer the sensor data via network protocols like MQTT to a NodeRed server.
 
-## Visual impressions
-
-Coming soon.
-
 ## Bill of materials (BOM)
 
 Following parts I have used in this project:
@@ -58,6 +54,16 @@ Here is the breadboard layout with the 5 V pin used of the (defective) USB-to-se
 The schematics looks like this:
 
 ![Schematics 5V](./fritzing/Bluepill_wifi_cp2102_5v_Schematics.png)
+
+## Visual impressions
+
+Here is an image of the breadboard layout with the 3.3 V capable USB-to-serial adapter:
+
+![Image 3.3V](./fritzing/image_breadboard_3v3.jpeg)
+
+Here is an image of the breadboard layout with the 5 V pin used of the (defective) USB-to-serial adapter:
+
+![Image 5V](./fritzing/image_breadboard_5v.jpeg)
 
 ## Software libraries and documentation
 
