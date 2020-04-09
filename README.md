@@ -65,6 +65,16 @@ Here is an image of the breadboard layout with the 5 V pin used of the (defectiv
 
 ![Image 5V](./fritzing/image_breadboard_5v.jpeg)
 
+## Output to serial console
+
+Here is a screenshot of PuTTY showing the output via the serial console:
+
+![Screenshot_PuTTY](./fritzing/screenshot_serial_console.png)
+
+## Output to webserver
+
+At the moment this webserver functionality does not work reliable (see issue below). So a screenshot will be taken later.
+
 ## Software libraries and documentation
 
 Go to the source code: I have it supplied with many comments for explanation.
