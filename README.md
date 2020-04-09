@@ -27,15 +27,17 @@ Following parts I have used in this project:
 - breadboard half+ (400 holes)
 - wire jumpers
 
-A word of **warning** about some (cheap) USB-to-serial adapters: some of them have pins labelled with **3.3 V**, but measurements showed something else like **4.3 V**.
+## USB-to-serial adapters: take a close look
 
-Those (defective) USB-to-serial adapters are looking like this:
+A word of **warning** about some (cheap) USB-to-serial adapters: some of them have VCC pins labelled with **3V3**, but measurements showed something else like **4.4 V**.
+
+These (defective) USB-to-serial adapters look like this:
 
 ![cp2102_5v_Breadboard](./fritzing/cp2102_5v_Breadboard_Foto.png)
 
-The external main supply voltage of the Bluepill (STM32 F103C8T6) is **NOT 5 V tolerant** and has maximum ratings of 4.0 V (compare with the [datasheet](https://www.st.com/resource/en/datasheet/stm32f103c8.pdf)). Because of this you can't use this pin for voltage supply of your microcontroller -- otherwise maybe you'll see the *magic blue smoke*.
+The 3.3 V external main supply voltage of the Bluepill (STM32 F103C8T6) is **NOT 5 V tolerant** and has maximum ratings of 4.0 V (compare with the [datasheet](https://www.st.com/resource/en/datasheet/stm32f103c8.pdf)). Because of this you can't use this adapter pin for voltage supply of your microcontroller -- otherwise maybe you'll see the *magic blue smoke*.
 
-Instead of this use the +5V pin of the adapter and connect it to the 5V power supply pin of the Bluepill. The voltage regulator of the board will generate the 3.3 V level. Because of these two cases I have created with *Fritzing* (https://fritzing.org) two versions of breadboard layouts and schematics. The UART pins (RxD, TxD) are then also at about 4.3 V level -- but luckily the UART pins (e. g. PA9, PA10) are 5 V tolerant, so it will work :)
+Instead of this use the +5V pin of the adapter and connect it to the 5V power supply pin of the Bluepill. The voltage regulator of the board will generate the 3.3 V level. Because of these two cases I have created with *Fritzing* (https://fritzing.org) two versions of breadboard layouts and schematics. The UART pins (RxD, TxD) are then also at a level of about 4.4 V  -- but luckily the UART pins (e. g. PA9, PA10) are 5 V tolerant, so it will work :)
 
 ## Breadboard layout and schematics (3.3 V version)
 
