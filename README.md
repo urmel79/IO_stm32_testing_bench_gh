@@ -85,14 +85,14 @@ This project is licensed under the terms of "GNU General Public License v3.0". F
 
 ## Implemented functionality
 
-- onboard LED is flashing like heartbeat; implemented in an FSM
+- onboard LED is flashing like heartbeat; implemented in an finite state machine (FSM)
 - sensor module Bosch BME280 (temperature, humidity and pressure) is read via I2C line and the output is written to the serial console
 - wifi connection is established with an ESP8266-01 microcontroller via 2. hardware serial line
 - webserver shows a very basic html website with the time passed since last reboot - but it's very unreliable at the moment
 
 ## Todo and known issues
 
-[Todo 2020-03-31] Establishing the wifi connection is very slow and not very reliable. It has to be rewritten in an finite state machine (FSM).
+[Todo 2020-03-31] Establishing the wifi connection is very slow and not very reliable. It has to be rewritten in an FSM.
 
 [Todo 2020-03-31] Sensor data of the BME280 should be displayed on the webserver.
 
