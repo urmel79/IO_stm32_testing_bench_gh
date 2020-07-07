@@ -75,10 +75,6 @@ Here is a screenshot of PuTTY showing the output via the serial console:
 
 At the moment this webserver functionality does not work reliable (see issue below). So a screenshot will be taken later.
 
-## Software libraries and documentation
-
-Go to the source code: I have it supplied with many comments for explanation.
-
 ## License
 
 This project is licensed under the terms of "GNU General Public License v3.0". For details see [LICENSE](LICENSE).
