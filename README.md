@@ -98,7 +98,7 @@ This project is licensed under the terms of "GNU General Public License v3.0". F
 
 
 
-Das ist ein Test, um einen Merge-Konflikt zu bekommen.
+Das ist ein Test, um einen Konflikt mit 'git merge' zu bekommen.
 
 
 
